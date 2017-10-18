@@ -1,0 +1,17 @@
+.jumbotron{
+    background-color: cadetblue;
+    color: azure;
+
+    background-image: url("../assets/bk.jpg");
+/*   讀圖要往外跳一層"../"才會到bt的資料夾*/
+    
+    background-position:center;
+    padding: 200px 25px;
+    font-family: Montserrat, sans-serif;
+    width: auto;
+    height: 400px;
+    background-size: cover;
+    overflow: hidden;
+    margin-bottom: 0px;      
+
+}
