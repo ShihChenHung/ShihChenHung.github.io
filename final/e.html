@@ -1,95 +1,75 @@
-<!doctype html>
-
+<!DOCTYPE html>
 <html>
+<title>Rohingya</title>
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta charset="UTF-8">
 
-    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="stylesheet" type="text/css" href="css/final.css">
 
-    <!-- This is Squarespace. -->
-    <!-- adam-fuchs-wzdd -->
-
-    <meta charset="utf-8" />
-    <title>Count Up — Alphafox Design</title>
-
-
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script type="text/javascript" src="https://adam-fuchs-wzdd.squarespace.com/s/countUp-voq4.js"></script>
-
-    <!-- End of Squarespace Headers -->
-    <script>
-        Y.Squarespace.FollowButtonUtils = {};
-        Y.Squarespace.FollowButtonUtils.renderAll = function() {};
-    </script>
-</head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/earlyaccess/notosanstc.css">    
+    </head>
 
 <body>
+    <div class="video-background">
+        <div class="video-foreground">
+            <iframe id="video1" src="https://www.youtube.com/embed/cKgMn0_9J50?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&playlist=cKgMn0_9J50" frameborder="0" allowfullscreen></iframe>
 
-
-
-    <div class="nav-wrapper">
-        <ul class="cf">
-            <a href="/"><span>Home</span></a>
-
-        </ul>
+        </div>
     </div>
 
+    <div id="vidtop-content">
+        <div class="vid-info">
+            <h1>YouTube Fullscreen Background Demo</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ultrices, ligula pulvinar rutrum condimentum, tortor libero mollis sem, a viverra risus elit sed arcu. Aliquam in nibh eros. Cras condimentum elit venenatis pharetra facilisis. In hac habitasse platea dictumst. Nunc eu lobortis lorem, sed sollicitudin leo. Proin vel facilisis diam. Pellentesque ac risus malesuada, efficitur lacus et, convallis massa. Aliquam eros nisl, vestibulum ac leo quis, elementum fermentum tortor. Aenean vitae bibendum libero, varius tempus urna. Sed et odio id lorem tempus scelerisque. Morbi efficitur condimentum rutrum. Sed magna magna, iaculis eget libero ut, pretium tincidunt libero.</p>
+                    <a href="https://www.youtube.com/embed/Egrpx5g0UgI">Full article</a>
+        </div>
+    </div>
+    
+    <div id="div2" class="container-fluid" style="width:100%;background: linear-gradient(red, yellow);min-height:200vh;margin-top:100vh;">
+    <div class="facthold"><br>
+    <h1 class="countstyle" id="count2"></h1>
+    <span class="countstyle">名難民</span>
+  </div>
+    </div>
 
-    <h1>
-        Alphafox Design
-    </h1>
-
-    <h1>
-        Alphafox Design
-    </h1>
-
-    <h1>
-        Alphafox Design
-    </h1>
-    <!--MAIN NAVIGATION-->
-
-
-    <ul class="cf">
-
-
-
-        <li class="index-collection folder">
-
-
-            <a href="/"><span>Home</span></a>
-
-        </li>
-
-
-
-
-
-
-
-    </ul>
-
-
-    <h1 id="count1"></h1>
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
     <script>
-        setTimeout(function() {
-           var options = {  
-                        useEasing: true,
-                          useGrouping: true,
-                          separator: ',',
-                          decimal: '.',
-                    };
-            var count = new CountUp("count1", 1000, 1, 0, 3, options);
-            count.start();
-        }, 5000);
+        $(function() {
+            var video = $("#video1").attr("src");
+            var pos_div2 = $("#div2").position().top;
+            var winh = $(window).height();
+            console.log(pos_div2);
+            $(window).scroll(function() {
+                var scroll = $(window).scrollTop();
+                console.log(scroll);
+                if(scroll > pos_div2 + winh){
+//                    $('#video1').get(0).stopVideo();
+                    $("#video1").attr("src","");
+                }
+                
+                if(scroll == 0){
+                    $("#video1").attr("src",video);
+                }
+            });
+        });
+        
     </script>
+    
+    
 
 
-    <h3>Count on Scroll into window</h3>
 
-
-    <h1 id="count2"></h1>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/countup.js/1.8.2/countUp.min.js'></script>
+ 
+    
+<!--countup-->
     <script>
         function aniCount() {
             $('#count2').each(function() {
@@ -105,11 +85,17 @@
                 
             });
         };
-        $(document).scroll(function() {
-            aniCount();
+        $(document).scrollTop(function() {
+           aniCount();
         });
     </script>
-
+    
+    
+    
+    
+    
+    
+    
+    
+    
 </body>
-
-</html>

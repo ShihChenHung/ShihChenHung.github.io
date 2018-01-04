@@ -1,49 +1,78 @@
-<!doctype html>
-
+<!DOCTYPE html>
 <html>
+<title>Rohingya</title>
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta charset="UTF-8">
 
-    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="stylesheet" type="text/css" href="css/final.css">
 
-    <!-- This is Squarespace. -->
-    <!-- adam-fuchs-wzdd -->
-
-    <meta charset="utf-8" />
-    <title>Count Up — Alphafox Design</title>
-
-
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script type="text/javascript" src="https://adam-fuchs-wzdd.squarespace.com/s/countUp-voq4.js"></script>
-
-
-</head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/earlyaccess/notosanstc.css">    
+    </head>
 
 <body>
 
-    <h1 id="count2"></h1>
-    <script>
-        function aniCount() {
-            $('#count2').each(function() {
-                    var options = {  
-                        useEasing: true,
-                          useGrouping: true,
-                          separator: ',',
-                    };
-                    var count = new CountUp("count2", 0, 625000, 0, 4.8, options);
-                    count.start();
-                    $('#count2').removeAttr('id');
-                
-            });
-        };
-        
-        $(window).scrollTop(function() {
-            aniCount();
-        });
+<div id="muteYouTubeVideoPlayer"></div>
+<div class="facthold"><br>
+    <span class="countstyle countupthis" numx="625000">2</span>
+    <span class="countstyle">名難民</span>
+  </div>
+
+<!--countup-->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/countup.js/1.8.2/countUp.min.js'></script>
+
+<!--countup-->
+      <script>
+      $(document).ready(function() {
+      var options = {  
+        useEasing: true,
+          useGrouping: true,
+          separator: ',',
+      };
+      $('.countupthis').each(function() {
+        var num = $(this).attr('numx'); //end count
+        var nuen = $(this).text();
+        if (nuen === "") {
+          nuen = 0;
+        }
+        var counts = new CountUp(this, nuen, num, 0, 4.8, options);
+        counts.start();
+      });});
     </script>
 
+ 
+<script async src="https://www.youtube.com/iframe_api"></script>
+<script>
+ function onYouTubeIframeAPIReady() {
+  var player;
+  player = new YT.Player('muteYouTubeVideoPlayer', {
+    videoId: 'DwZLW5xIBIE', // YouTube 影片ID
+    width: 100,               // 播放器寬度 (px)
+    height: 1000,              // 播放器高度 (px)
+    playerVars: {
+      autoplay: 1,        // 在讀取時自動播放影片
+      controls: 1,        // 在播放器顯示暫停／播放按鈕
+      showinfo: 0,        // 隱藏影片標題
+      modestbranding: 1,  // 隱藏YouTube Logo
+      loop: 1,            // 讓影片循環播放
+      fs: 0,              // 隱藏全螢幕按鈕
+      cc_load_policty: 0, // 隱藏字幕
+      iv_load_policy: 3,  // 隱藏影片註解
+      autohide: 0         // 當播放影片時隱藏影片控制列
+    },
+    events: {
+      onReady: function(e) {
+        e.target.mute();
+      }
+    }
+  });
+ }
+ 
+ // Written by @labnol 
+</script>
 </body>
-
-</html>
+    
+            <
