@@ -9,36 +9,36 @@
     
     <link rel="stylesheet" type="text/css" href="css/final.css">
 
-    <link rel="stylesheet" href="https://fonts.googleapis.com/earlyaccess/notosanstc.css">
-<!--count up計數-->
-    <script type="text/javascript" src="/js/jquery.min.js"></script>
-    <script type="text/javascript" src="/js/countUp.js"></script>
-<!---->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/earlyaccess/notosanstc.css">    
     </head>
-    <body>
-         <h1 id="count2"></h1>
-        <h1>名難民</h1>
-        
-    <script>
-        function aniCount() {
-            $('#count2').each(function() {
-                    var options = {  
-                        useEasing: true,
-                          useGrouping: true,
-                          separator: ',',
-                    };
-                    var count = new CountUp("count2", 0, 625000, 0, 4.8, options);
-                    count.start();
-                    $('#count2').removeAttr('id');
-                
-            });
-        };
-        
-        $(window).scrollTop(function() {
-            aniCount();
-        });
-    </script>
 
-    </body>
+<body>
+<div class="facthold"><br>
+    <span class="countstyle countupthis" numx="625000">2</span>
+    <span class="countstyle">名難民</span>
+  </div>
 
-</html>
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/countup.js/1.8.2/countUp.min.js'></script>
+  <script>
+    $(document).ready(function() {
+      var options = {  
+        useEasing: true,
+          useGrouping: true,
+          separator: ',',
+      };
+      $('.countupthis').each(function() {
+        var num = $(this).attr('numx'); //end count
+        var nuen = $(this).text();
+        if (nuen === "") {
+          nuen = 0;
+        }
+        var counts = new CountUp(this, nuen, num, 0, 4.8, options);
+        counts.start();
+      });
+
+
+    });
+  </script>
+</body>
