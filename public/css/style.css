@@ -13,8 +13,8 @@ body {
     padding: 1rem;
 }
 
-.titlecolor{
-        color:#33CCAE;
+.titlecolor {
+    color: #33CCAE;
 }
 
 
@@ -36,6 +36,7 @@ h1 {
 }
 
 /* Canvas container */
+
 .container {
     position: fixed;
     z-index: -99;
@@ -46,48 +47,53 @@ h1 {
 
 
 /* Content */
-.main h2{
+
+.main h2 {
     font-size: 3rem;
-    text-shadow:4px 4px 3px rgba(0,0,0,0.1);
+    text-shadow: 4px 4px 3px rgba(0, 0, 0, 0.1);
     padding-left: 4rem;
     padding-top: 1rem;
     padding-bottom: 0.5rem;
-margin-bottom: 0rem;}
+    margin-bottom: 0rem;
+}
+
 .js-section {
     width: 90vw;
     max-width: 700px;
-        padding-left: 2rem;
+    padding-left: 2rem;
 }
 
 .js-image {
-max-width: 100%;
+    max-width: 100%;
     width: 700px;
 }
 
-figcaption{
+figcaption {
     color: darkgray;
     font-size: 0.8rem;
-        max-width: 100vw;
-        padding-left: 1rem;
+    max-width: 100vw;
+    padding-left: 1rem;
 }
 
 
 
 /*緬人故事*/
-.w3-tag{
+
+.w3-tag {
     background-color: #232323;
     color: white;
     font-size: 1.5rem;
     padding-left: 2.5rem;
     padding-top: 0.5rem;
-    padding-bottom:0.5rem;
+    padding-bottom: 0.5rem;
     padding-right: 2rem;
-    }
-.storytitle{
+}
+
+.storytitle {
     font-size: 2.5rem;
     background-color: #232323;
-    height:auto;
-    max-width:100vw;    
+    height: auto;
+    max-width: 100vw;
     padding-left: 5rem;
     padding-top: 2rem;
     padding-bottom: 2rem;
@@ -95,30 +101,31 @@ figcaption{
 
 }
 
-.storycontent{
+.storycontent {
     line-height: 1.5rem;
     font-size: 1.1rem;
     width: 750px;
     max-width: 95vw
 }
 
-.storycontent p{
-    line-height: 2rem;  
-    padding-left:2rem;
-    padding-top:1.5rem ;
+.storycontent p {
+    line-height: 2rem;
+    padding-left: 2rem;
+    padding-top: 1.5rem;
 }
 
-.storycontent img{
+.storycontent img {
     max-width: 100%;
 }
 
 /*timeline*/
 
-.timetitle{
-    color:#2EAF96;
+.timetitle {
+    color: #2EAF96;
     margin: 0;
     padding: 0.8rem 0 0.3rem 0;
 }
+
 .line {
     font-size: 1rem;
 }
@@ -126,12 +133,13 @@ figcaption{
 .history {
     background-image: url("../assets/timelineback.jpg");
     background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
-    -webkit-background-size:cover;
-    -moz-background-size:cover;
-    -o-background-size:cover;
     z-index: 0;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: center;
 
 }
 
@@ -139,7 +147,7 @@ figcaption{
     position: relative;
     max-width: 100vw;
     margin: 0 auto;
-    
+
 }
 
 .timeline::after {
@@ -152,7 +160,7 @@ figcaption{
     left: 50%;
     margin-left: -3px;
     z-index: -80;
-    box-shadow:4px 4px 3px rgba(0,0,0,0.5);
+    box-shadow: 4px 4px 3px rgba(0, 0, 0, 0.5);
 }
 
 .timebox {
@@ -225,7 +233,7 @@ figcaption{
     background-color: #FDFCEC;
     position: relative;
     border-radius: 6px;
-    box-shadow:4px 4px 3px rgba(0,0,0,0.5);
+    box-shadow: 4px 4px 3px rgba(0, 0, 0, 0.5);
 }
 
 .line h4 {
@@ -239,14 +247,15 @@ figcaption{
     background-image: url("../assets/war2.jpg");
     background-attachment: fixed;
     background-position: center;
+    height: 200vh;
+    position: relative;
+
     background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
-    height:200vh;
-    position:relative;
-    width: 100%;
-        -webkit-background-size:cover;
-    -moz-background-size:cover;
-    -o-background-size:cover;
+    background-position: center;
 }
 
 .scrollable {
@@ -254,16 +263,19 @@ figcaption{
 }
 
 /*各國立場*/
+
 .countriessit {
     background-image: url(../assets/conflict2.jpg);
     z-index: 12;
     padding: 2rem;
     padding-top: 2rem;
-        background-attachment: fixed;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
-        -webkit-background-size:cover;
-    -moz-background-size:cover;
-    -o-background-size:cover;
+    background-position: center;
 }
 
 .countriessit-title {
@@ -278,7 +290,7 @@ figcaption{
 .countriessit-word {
     color: white;
     font-size: 1rem;
-    text-align:left;
+    text-align: left;
     line-height: 2rem;
     padding: 2rem;
     padding-top: 2rem;
@@ -305,15 +317,16 @@ a1 {
 
 .countbackground {
     background-attachment: fixed;
-    background-size: cover;
     min-height: 70vh;
     text-align: center;
     line-height: 2rem;
-    max-width: 100vw;
     background-image: url(../assets/counterbackground.jpg);
-        -webkit-background-size:cover;
-    -moz-background-size:cover;
-    -o-background-size:cover;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: center;
 }
 
 .columns {
@@ -352,13 +365,13 @@ a1 {
 #count1,
 .count1,
 #count2,
-#count3{
+#count3 {
     color: white;
 }
 
 .counter,
-.counter2{
-     padding: 2rem
+.counter2 {
+    padding: 2rem
 }
 
 
@@ -451,7 +464,7 @@ a1 {
         columns: 200vw 2;
 
     }
-/*
+    /*
     #scrollable {
         position: absolute;
         width: 30vw;
@@ -484,19 +497,19 @@ a1 {
 @media all and (max-width: 700px) {
     html {
         font-size: 10px;
-        
+
     }
     blockquote {
-		font-size: 1.45rem;
-	}
-
-
-
-@media all and (max-width: 500px) {
-    html {
-        font-size: 11px;
+        font-size: 1.45rem;
     }
-/*
+
+
+
+    @media all and (max-width: 500px) {
+        html {
+            font-size: 11px;
+        }
+        /*
            #scrollable {
         position: absolute;
         width: 30vw;
@@ -504,4 +517,4 @@ a1 {
         left: 0vw;
     }
 */
-}
+    }
