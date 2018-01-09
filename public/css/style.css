@@ -1,4 +1,3 @@
-
 body {
     margin: 0;
     background-color: black;
@@ -27,22 +26,6 @@ h1 {
 
 }
 
-h2 {
-
-    font-size: 5rem;
-}
-
-h3 {
-    font-size: 1.5rem;
-    line-height: 2rem;
-    margin-top: 10vh;
-}
-
-h4 {
-    font-size: 1.5rem;
-}
-
-
 /*video*/
 
 .video iframe {
@@ -55,8 +38,6 @@ h4 {
 }
 
 /* Canvas container */
-
-
 .container {
     position: fixed;
     z-index: -99;
@@ -67,35 +48,31 @@ h4 {
 
 
 /* Content */
-
-.content {
-    padding: 3rem 0;
+.main h2{
+    font-size: 3rem;
+    text-shadow:4px 4px 3px rgba(0,0,0,0.1);
+    padding-left: 4rem;
+    padding-bottom: 1rem;
 }
-
-
 .js-section {
-    width: 100vw;
+    width: 90vw;
     max-width: 700px;
-}
-
-.js-gallery {
-    padding-top: 50px;
-    padding-bottom: 50px;
-}
-
-.js-gallery-content {
-    font-size: 0;
-    text-align: center;
-}
-
-.js-gallery-content img {
-    max-width: 100%;
-    margin: 10px 0;
+        padding-left: 2rem;
 }
 
 .js-image {
-    max-width: 50vw;
+max-width: 100vw;
+    width: 700px;
 }
+
+figcaption{
+    color: darkgray;
+    font-size: 0.8rem;
+        max-width: 100vw;
+        padding-left: 3rem;
+}
+
+
 
 /*緬人故事*/
 .w3-tag{
@@ -106,24 +83,32 @@ h4 {
 }
 
 .storytitle{
-    font-size: 3rem;
-    line-height: 7rem;
+    font-size: 2.5rem;
     background-color: #232323;
-    height: 50vh;
-    max-width:100vw;
-    padding: 5rem 0 0 10rem
+    height:auto;
+    max-width:100vw;    
+    padding-left: 5rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    line-height: 5rem;
+
 }
 
 .storycontent{
     line-height: 1.5rem;
     font-size: 1.1rem;
-    padding: 3rem 0 0 1rem;
-    width: 50vw;
+    width: 750px;
+    max-width: 95vw
 }
 
 .storycontent p{
     line-height: 2rem;  
-    padding:1rem 0 1rem 0 ;
+    padding-left:1rem;
+    padding-top:1.5rem ;
+}
+
+.storycontent img{
+    max-width: 100vw;
 }
 
 /*timeline*/
@@ -150,6 +135,7 @@ h4 {
     position: relative;
     max-width: 100vw;
     margin: 0 auto;
+    
 }
 
 .timeline::after {
@@ -162,13 +148,15 @@ h4 {
     left: 50%;
     margin-left: -3px;
     z-index: -80;
+    box-shadow:4px 4px 3px rgba(0,0,0,0.5);
 }
 
 .timebox {
     padding: 10px 40px;
     position: relative;
     background-color: inherit;
-    max-width: 43.5vw;
+    width: 43.5vw;
+    max-width: 80vw;
 }
 
 .timebox::after {
@@ -182,7 +170,9 @@ h4 {
     top: 15px;
     border-radius: 50%;
     z-index: 1;
+
 }
+
 
 
 .left {
@@ -231,8 +221,12 @@ h4 {
     background-color: #FDFCEC;
     position: relative;
     border-radius: 6px;
+    box-shadow:4px 4px 3px rgba(0,0,0,0.5);
 }
 
+.line h4 {
+    font-size: 1.5rem;
+}
 
 
 /*countryscroll*/
@@ -251,6 +245,49 @@ h4 {
 .scrollable {
     max-height: 15vh;
 }
+
+/*各國立場*/
+.countriessit {
+    background-image: url(../assets/conflict2.jpg);
+    z-index: 12;
+    padding: 2rem;
+    padding-top: 2rem;
+        background-attachment: fixed;
+    background-size: cover;
+}
+
+.countriessit-title {
+
+    font-size: 2.5rem;
+    line-height: 5rem;
+    text-align: center;
+
+    font-weight: 600;
+}
+
+.countriessit-word {
+    color: white;
+    font-size: 1rem;
+    text-align:left;
+    line-height: 2rem;
+    padding: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 0.5rem;
+}
+
+.countriessource {
+    color: darkgray;
+    font-size: 0.9rem;
+    text-align: center;
+    padding: 2rem;
+    padding-top: 0.5rem;
+}
+
+a {
+    color: darkgrey;
+}
+
+
 
 /*count*/
 
@@ -307,6 +344,18 @@ h4 {
 .counter,
 .counter2{
      padding: 2rem
+}
+
+
+.count h2 {
+
+    font-size: 5rem;
+}
+
+.count h3 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    margin-top: 10vh;
 }
 
 /*animate*/
