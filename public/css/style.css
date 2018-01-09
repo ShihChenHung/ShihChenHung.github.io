@@ -1,15 +1,61 @@
+
+body {
+    margin: 0;
+    background-color: black;
+    font-family: 'Noto Sans TC', sans-serif;
+    max-width: 100vw;
+}
+
+.title {
+    z-index: 1;
+    max-width: 100vw;
+    background: rgba(0, 0, 0, 0.3);
+    color: #fff;
+    padding: 1rem;
+    font-family: Avenir, Helvetica, sans-serif;
+
+}
+
+.titlecolor{
+        color:#33CCAE;
+}
+
+
+h1 {
+    font-size: 5rem;
+    z-index: 99;
+
+}
+
+h2 {
+
+    font-size: 5rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    margin-top: 10vh;
+}
+
+h4 {
+    font-size: 1.5rem;
+}
+
+
 /*video*/
 
 .video iframe {
     background: #000;
-    position: auto, 0px, 0px, 0px;
+    position: auto 0px 0px 0px;
     z-index: -9;
     pointer-events: none;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
 }
 
 /* Canvas container */
+
 
 .container {
     position: fixed;
@@ -23,7 +69,7 @@
 /* Content */
 
 .content {
-    padding: 3em 0;
+    padding: 3rem 0;
 }
 
 
@@ -48,51 +94,46 @@
 }
 
 .js-image {
-    max-width: 80vw;
+    max-width: 50vw;
 }
 
-body {
-    margin: 0;
-    background-color: black;
-    font-family: 'Noto Sans TC', sans-serif;
-    max-width: 100vw;
-}
-
-.title {
-    z-index: 1;
-    width: 100vw;
-    background: rgba(0, 0, 0, 0.3);
-    color: #fff;
-    padding: 1rem;
-    font-family: Avenir, Helvetica, sans-serif;
-
-}
-
-h1 {
-    font-size: 5rem;
-    z-index: 99;
-
-}
-
-h2 {
-
-    font-size: 5rem;
-}
-
-h3 {
+/*緬人故事*/
+.w3-tag{
+    background-color: #232323;
+    color: white;
     font-size: 1.5rem;
-    line-height: 2rem;
-    margin-top: 10vh;
+    padding: 0.5rem 1rem 0.5rem 1rem;
 }
 
-h4 {
-    font-size: 1.5rem;
+.storytitle{
+    font-size: 3rem;
+    line-height: 7rem;
+    background-color: #232323;
+    height: 50vh;
+    max-width:100vw;
+    padding: 5rem 0 0 10rem
+}
+
+.storycontent{
+    line-height: 1.5rem;
+    font-size: 1.1rem;
+    padding: 3rem 0 0 1rem;
+    width: 50vw;
+}
+
+.storycontent p{
+    line-height: 2rem;  
+    padding:1rem 0 1rem 0 ;
 }
 
 /*timeline*/
 
+.timetitle{
+    color:#2EAF96;
+    margin: 0;
+    padding: 0.8rem 0 0.3rem 0;
+}
 .line {
-    background-color: black;
     font-size: 1rem;
 }
 
@@ -107,7 +148,7 @@ h4 {
 
 .timeline {
     position: relative;
-    max-width: 95vw;
+    max-width: 100vw;
     margin: 0 auto;
 }
 
@@ -115,18 +156,19 @@ h4 {
     content: '';
     position: absolute;
     width: 6px;
-    background-color: white;
+    background-color: #33CCAE;
     top: 0;
     bottom: 0;
     left: 50%;
     margin-left: -3px;
+    z-index: -80;
 }
 
 .timebox {
     padding: 10px 40px;
     position: relative;
     background-color: inherit;
-    max-width: 41.7vw;
+    max-width: 43.5vw;
 }
 
 .timebox::after {
@@ -136,7 +178,7 @@ h4 {
     height: 25px;
     right: -17px;
     background-color: white;
-    border: 4px solid #880000;
+    border: 4px solid white;
     top: 15px;
     border-radius: 50%;
     z-index: 1;
@@ -162,7 +204,7 @@ h4 {
     right: 30px;
     border: medium solid black;
     border-width: 10px 0 10px 10px;
-    border-color: transparent transparent transparent bisque;
+    border-color: transparent transparent transparent #FDFCEC;
 }
 
 .right::before {
@@ -175,7 +217,7 @@ h4 {
     left: 30px;
     border: medium solid black;
     border-width: 10px 10px 10px 0;
-    border-color: transparent bisque transparent transparent;
+    border-color: transparent #FDFCEC transparent transparent;
 }
 
 .right::after {
@@ -186,10 +228,12 @@ h4 {
 
 .contenttime {
     padding: 20px 30px;
-    background-color: bisque;
+    background-color: #FDFCEC;
     position: relative;
     border-radius: 6px;
 }
+
+
 
 /*countryscroll*/
 
@@ -199,6 +243,9 @@ h4 {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    height:200vh;
+    position:relative;
+    width: 100%;
 }
 
 .scrollable {
@@ -213,7 +260,7 @@ h4 {
     min-height: 70vh;
     text-align: center;
     line-height: 2rem;
-    width: 100vw;
+    max-width: 100vw;
     background-image: url(../assets/counterbackground.jpg);
 }
 
@@ -226,11 +273,10 @@ h4 {
 }
 
 .whitemask {
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.6);
     background-attachment: fixed;
     z-index: 10;
-    padding: 5rem;
-    padding-top: 7rem;
+    padding: 7rem 5rem 2rem 0;
 }
 
 
@@ -257,6 +303,12 @@ h4 {
 #count3{
     color: white;
 }
+
+.counter,
+.counter2{
+     padding: 2rem
+}
+
 /*animate*/
 
 .slideanimate {
@@ -315,7 +367,7 @@ h4 {
         left: 60px;
         border: medium solid white;
         border-width: 10px 10px 10px 0;
-        border-color: transparent bisque transparent transparent;
+        border-color: transparent #FDFCEC transparent transparent;
     }
 
 
@@ -368,7 +420,11 @@ h4 {
 @media all and (max-width: 700px) {
     html {
         font-size: 10px;
+        
     }
+    blockquote {
+		font-size: 1.45rem;
+	}
 
 
 
