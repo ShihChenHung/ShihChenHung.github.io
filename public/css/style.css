@@ -60,7 +60,7 @@ margin-bottom: 0rem;}
 }
 
 .js-image {
-max-width: 100vw;
+max-width: 100%;
     width: 700px;
 }
 
@@ -109,7 +109,7 @@ figcaption{
 }
 
 .storycontent img{
-    max-width: 100vw;
+    max-width: 100%;
 }
 
 /*timeline*/
@@ -128,6 +128,9 @@ figcaption{
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
     z-index: 0;
 
 }
@@ -241,6 +244,9 @@ figcaption{
     height:200vh;
     position:relative;
     width: 100%;
+        -webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
 }
 
 .scrollable {
@@ -255,6 +261,9 @@ figcaption{
     padding-top: 2rem;
         background-attachment: fixed;
     background-size: cover;
+        -webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
 }
 
 .countriessit-title {
@@ -302,6 +311,9 @@ a1 {
     line-height: 2rem;
     max-width: 100vw;
     background-image: url(../assets/counterbackground.jpg);
+        -webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
 }
 
 .columns {
