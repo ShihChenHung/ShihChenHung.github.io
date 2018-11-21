@@ -1,139 +1,367 @@
 <!DOCTYPE html>
-<html lang="en" class="no-js">
+<html>
+<title>Rohingya</title>
 
 <head>
-	<meta charset="UTF-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-	<title>Interactive Storytelling | Codrops</title>
-	<meta name="description" content="An interactive journey where a Canvas map path is animated according to the content that is scrolled on the page. By Lucas Bebber." />
-	<meta name="keywords" content="svg map, animated, path, journey, story, article, canvas, images, plane, web design" />
-	<meta name="author" content="Lucas Bebber for Codrops" />
-	<link rel="shortcut icon" href="favicon.ico">
-	<link rel="stylesheet" type="text/css" href="css/normalize.css" />
-	<link rel="stylesheet" type="text/css" href="css/style.css" />
-	<!--[if IE]>
-	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-  <![endif]-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--    <link rel="stylesheet" type="text/css" href="css/final.css">-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/earlyaccess/notosanstc.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 </head>
 
 <body>
-	<div class="main">
-		<header class="codrops-header">
-			<div class="codrops-links">
-				<a class="codrops-icon codrops-icon--prev" href="http://tympanus.net/Tutorials/ShazamButtonEffect/" title="Previous Demo"><span>Previous Demo</span></a>
-				<a class="codrops-icon codrops-icon--drop" href="http://tympanus.net/codrops/?p=25667" title="Back to the article"><span>Back to the Codrops article</span></a>
-			</div>
-			<h1 class="header-title"><span class="header-title__main">The Wild Path</span> <span class="header-title__part">An Icelandic Adventure</span> <span class="header-title__sub">An interactive storytelling experiment with Canvas. <br />Photo courtesy of <a href="http://instagram.com/danrubin/">Dan Rubin</a>.</span></h1>
-		</header>
-		<div class="intro">
-			<blockquote><em>“Twenty years from now you will be more disappointed by the things you didn’t do <br/>than by the ones you did do.”</em><span>Mark Twain</span></blockquote>
-		</div>
-		<div class="container"></div>
-		<div class="text">
-			<section class="js-section" data-zoom-middle="2">
-				<h2><span class="title-up">Reykjavík</span><span class="title-down">The Adventure Begins</span></h2>
-				<p class="text-intro">We caught glimpses of faces at most of the windows peering curiously at us and watching our progress through the town.</p>
-				<p>Much to our surprise, when about two miles outside Reykjavik, we met our fellow-passenger by the Ceres, him with whom we had lunched at Thorshavn on the outward journey. We had left him behind at that port, and he had intended to stay for several weeks at the Faroes and to return thence to England; but having found things rather slow there, he had followed us to Iceland by the next steamer; hence the meeting on the road.</p>
-				<p>We created some sort of sensation as we entered the capital of Iceland. The clocks were striking ten as we clattered down the long main street; it was a time when the populace were at leisure and on the street, and they evinced no little curiosity as we rode by them. They were congregated in small groups, and it was evident to us that we were being discussed—and no wonder, for we were a motley-looking cavalcade! We must have presented a very grotesque appearance, clad as we were in oilskins, and covered with mud from head to foot: it had been raining at intervals on the way, and we had had a rather disagreeable journey. </p>
-				<figure>
-					<img class="js-image" data-pos="0.25" src="img/journey/9.jpg" />
-					<figcaption>All things come to an end, and so did our journey when we reached the end of the main street in Reykjavik</figcaption>
-				</figure>
-				<p>We caught glimpses of faces at most of the windows peering curiously at us and watching our progress through the town. Many of the members of the groups, by the wayside saluted as we passed by—the Icelanders are a polite people, as a rule, and they doff their head-gear in salutation to strangers. So we progressed, being saluted, and acknowledging the salutes. It was a sort of triumphal entry, for the news had been carried forward by one of the guides, who was some little distance ahead with some of the pack-ponies, that we had just crossed the country by way of the uninhabited interior. All things come to an end, and so did our journey when we reached the end of the main street in Reykjavik, for there, at a great wooden building four stories high, we took up our quarters, and the crossing of Iceland was an accomplished fact.</p>
-			</section>
-			<section class="js-section" data-zoom-start="2">
-				<h2><span class="title-up">Reykjanesta</span><span class="title-down">到了拉廊</span></h2>
-				<p>We were six in all—a semi-scientific party. There was Miss J. A. Hastie, a woman who has travelled much in Europe, Asia, Africa, and America, and who is not unacquainted with our Colonies at the Antipodes, or with the islands of the South Seas. She was specially interested in the botany of the country, in its folklore, and in the people. Then there was Captain W. H. Cope; he had been at sea for the greater part of his life, and had in the course of his journeyings seen much of the world; he was our nautical adviser, and we referred to him in matters connected with the sea. W. Glen, Miss Hastie's cousin, was known as the "handy man" of the party. If anybody was in difficulties, Glen was always on the spot to lend a helping hand. He produced all sorts of things at the right moment. Did any one require a screw-driver, then Glen had it; want a corkscrew, Glen could supply it; a pair of scissors, he produced them—some string, a strap, it was all the same. If a camera struck work, Glen could render the strike ineffective, for he carried two, and could lend one without interfering with his own photographic work. A. W. Hill, of King's College, Cambridge, was our botanist—who describes what he saw. H. H. Thomas, of Balliol, paid special attention to the geological formation of the country that we traversed, and he was frequently to be seen, camera in hand, taking shots at interesting formations—a glaciated lava surface, a volcanic vent, or an immense "erratic" boulder or "perched block," for instance; he also sketched industriously, and sometimes paced the ground compass in hand in order that he might record in his note-book the direction of a line of fissure, or the position of hot springs along that line; or something else of interest to geologists in particular. I was the geographer, whose mission it was to make a map of a small portion of the country traversed, to get a general idea of its conformation, and to note valleys and mountains, ice-fields and snow slopes, lava flows and hot springs, mighty rivers and tiny rivulets.</p>
-				<figure>
-					<img class="js-image" data-pos="0.3" src="img/journey/5.jpg" />
-					<figcaption>I was the geographer, whose mission it was to make a map of a small portion of the country traversed.</figcaption>
-				</figure>
-				<p>Next day rain, fog, and mist prevailed, so there was much whist-playing and smoking below, and much blowing of whistle above. Towards evening we were off the coast of Iceland; the land was not visible, for we were enveloped in fog, but there was no doubt about it, for we could hear that land was not far distant. It may seem strange, but it was a fact, we were really feeling our way along the coast by the aid of the steam-whistle. The land thereabouts rises abruptly from the sea, and the echoes from the sheer faces of rock enabled the officers of the vessel to judge their distance. We went dangerously near to another vessel in the fog, but soon afterwards it cleared off a bit, and there, just abeam on the starboard side, was the other vessel, sufficiently close to be a dangerous neighbour in thick weather. At midnight we were going full speed ahead, but when I awoke at seven in the morning it was to find that our experiences of fog were not at an end, that we were again in a very dense one, and that we were lying-to. After breakfast it lifted sufficiently to allow of a course being shaped for Northfjord, our first port of call in Iceland. Much of the scenery of this fjord was obscured by the thick atmosphere, but occasional glimpses through rifts proved that we were missing many fine scenes that are on view when the conditions are favourable. The first sight of Iceland was obtained at Dalatangi Point, four or five miles to the north of the entrance to Northfjord. In the fog we had gone too far north. Other glimpses on the way were of a corrie near Dalatangi, and the face of the mountains near Mjofifjord. Our stay at Northfjord was of but short duration, and there was no time to go ashore, so the only view we had of the town was obtained from the vessel's deck.</p>
-			</section>
-			<section class="js-section" data-zoom-start="2.5" data-stay="true">
-				<h2><span class="title-up">Krísuvíkurbjarg</span><span class="title-down">New Adventures</span></h2>
-				<p>Ashore one is first struck with the Faroese themselves: they are a fine race, and retain their native politeness and independence of character; they are courteous in the extreme to strangers. Most of the men are fishermen or sailors, and many, through their consequent contact with English-speaking people, can converse in good understandable English. A small trade is done in wool, and we met two of the islanders, fine types of the race, returning from their day's work; they were quite picturesque figures, for, besides being attired in the national costume, they had wound round them a quantity of wool, which in these islands is generally plucked, not shorn, from the sheep's back. The national costume consists of a sort of brewer's cap, having red and blue stripes as a rule, a cloth tunic, a waistcoat, and knee breeches split at the knees, but very rarely buttoned, rough woollen stockings and skin shoes. The fishermen often dispense with tunic and waistcoat, and wear in their place a woollen jersey with long sleeves, that has a strong sheepy smell, having a particular pattern worked in pale blue and red on a white ground. The women I saw wore dresses of white striped cotton stuff, no ordinary head covering, but shawls across the shoulders, which were often pulled over the head, and wooden clogs on the feet.</p>
-				<figure>
-					<div class="js-gallery-content">
-						<img src="img/journey/6.jpg" />
-						<img src="img/journey/4.jpg" />
-						<img src="img/journey/11.jpg" />
-						<img src="img/journey/8.jpg" />
-					</div>
-					<figcaption>An unexpected turn in our journey led us to many impressive places.</figcaption>
-				</figure>
-				<p>We were to have made a start at eleven o'clock the next morning, but fate was against us. At the appointed hour the members of the party were ready and waiting, but guides, ponies, pack and riding saddles, tents, provisions, etc., were not ready, and we could not well start unless they were. Saddles and gear required many repairs—most of them had been hired, and they were not in the best condition. Our manager of affairs was to be seen flitting about settling up accounts, giving directions to the men, inspecting saddles, bridles, girths, and gear, and generally trying to reduce confusion to order. For an hour or more we were amused, but then we began to get impatient. Three of us got hold of a saddle and bridle, and we tried the paces of a few of the ponies. In that way we put in an hour or two that might have proved irksome, for everything was in such a state of confusion and unreadiness, and the space in which the men were working was so confined, that we could render no effective help. Instead of starting at eleven, it was half-past three before we got away—four and a half hours late!</p>
-				<p>I engaged two young Faroese to row me to the vessel, and on arrival enjoined them to await me that they might put me ashore again; when, however, I had changed the films and was ready to return, they were nowhere to be found—the young beggars had gone off with another fare, and had left me to my own devices and to the off chance of a "lift" in another boat. I felt much inclined to make a murderous attack upon the Queen's English, to say nothing of the young Faroese had they come my way while pacing the deck in impotent wrath; but I was obliged to restrain myself, for there was no one with whom I could with justice quarrel, so I suppressed the rising ire, and went in search of somebody who could speak my native language. In the end I found a Faroese with some knowledge of English, and arranged for a passage in a cargo-boat then about to return to the shore. Soon I was being conveyed from the Ceres at the rapid rate—for a very heavily laden cargo-boat, that is—of about a knot an hour. However, I reached the shore in due course, just in time to join our party at lunch at the hotel, where they were being entertained by a fellow-passenger. A merry meal we had, and in the course of it our host joined us in criticising the appointments of the table, but, in spite of a few makeshifts, they were not at all bad, and the meal itself was decidedly good.</p>
-			</section>
-			<section class="js-section" data-zoom-start="1.5">
-				<p>I strolled about, camera in hand, and found that many of the women and girls were quite anxious to be photographed; at one spot I came upon a group of women squatting on the ground; as I approached, several others hastened to join the group, at the same time inviting me to photograph them, which I did. Shortly afterwards my films came to an end, so I made a journey to the Ceres, which was lying at anchor half a mile from the shore, in order to reload the camera.</p>
-				<p>The formation of the basaltic hills was most striking, the many pyramidal shapes impressing us greatly. There were numerous dykes in the mountain side, deep ravines scored perpendicularly in the basaltic formation, where softer intrusive material had been eroded more rapidly than the rock on each side. At the entrance to Kalsofjord (the channel between the islands of Kalso on the west and Bordo and Kuno on the east side) there was a very strong current flowing against us in a southerly direction; a course was therefore steered close in-shore to avoid the full strength of the current in mid-stream. Klaksvig lies in a bay in the island of Bordo, and to reach it a turn has to be made eastward between the islands of Kuno and Bordo. At the entrance to the bay anchor was dropped, and there we remained all night. We were close to the southern end of the island of Kuno, where a very fine specimen of a pyramidal mountain frowned down upon us from the height of nearly 2300 feet—it is a pyramid that might well cause the shade of Cheops, if ever passing that way, to hide his diminished head and fade into oblivion. We witnessed some very fine cloud-effects in the course of the journey to Klaksvig, for the clouds drifting over the high hills often streamed away far to leeward of them.</p>
-				<p>
-					<blockquote><em>Broad, wholesome, charitable views of men and things cannot be acquired by vegetating in one little corner of the earth all of one’s lifetime.</em><span> &mdash; Mark Twain</span></blockquote>
-				</p>
-				<p>On one side of this wall there is a cod-liver oil factory, which we inspected; it was not quite so smelly as are some factories where shark or whale oil is produced—but more of that anon! One of the vats was full of a rich brown liquid, which we were informed was unrefined cod-liver oil. The oil is exported in that state after being run into casks, many of which were strewed on the hillside. A pretty picture was seen near the wharf, where several young women were busily engaged washing cod-fish in a bath under cover of an open shed.</p>
-				<figure>
-					<img class="js-image" data-pos="0.6" src="img/journey/10.jpg" />
-					<figcaption>I was the geographer, whose mission it was to make a map of a small portion of the country traversed.</figcaption>
-				</figure>
-				<p>During the voyage I often wrote my notes somewhere about midnight, and this night, while thus employed in my cabin, my "stable companion" took it into his head that I was preventing him from the proper enjoyment of his slumbers, and growled out something to that effect; so, to avoid raising his wrath, I interrupted the course of the notes and turned in; but it was not to sleep, for I had scarcely laid head upon pillow before certain sounds from the bunk below made it evident that unconsciously he was going to turn the tables upon me, and that, by stertorously enjoying his slumbers, he would prevent me from peacefully enjoying mine. After several ineffectual attempts to stop the snoring, I at last fled to the saloon, far out of range of the noise, and there reposed in peace for the rest of the night.</p>
-			</section>
-			<section class="js-section" data-zoom-start="1.5">
-				<h2><span class="title-up">Hveragerði</span><span class="title-down">Sheer Faces of Rock</span></h2>
-				<p>On the west side, and near to the north end of the fjord, there are some very fine specimens of common basaltic land forms—two grand corries, a fine dyke, some sheer faces of rock, and as we passed by the end of the land an almost sheer precipice which faced west came into view, while standing out at its foot there was a solitary basaltic column. When coming up the fjord the steam-whistle was frequently sounded in order that we might hear the very fine echoes for which it is noted; the interval is a long one, some three or four seconds. At the corries the sound echoed and re-echoed until it finally died away in the heights above.</p>
-				<p>The Icelanders are very hospitable, and travellers are made welcome. Every farmer who can afford it has one or two guest-chambers that are placed at the disposal of any one passing through. On arrival at the farm the traveller is invited to partake of coffee. When this is served in the best room of the house, the farmer and his wife join the new arrivals in a light meal, consisting of excellent coffee, and fancy pastry of equally excellent quality. Some of the Icelandic women are very good pastry-cooks, and the cakes and pastry they produce often equal in quality any that could be procured at a first-class London confectioner's.</p>
-				<p>There were some pretty scenes on the river Draghalsá, an interesting stream having a number of hard and soft dykes cut through by the water that descends in a series of waterfalls to a pool, the overflow from which runs into the lake close by. Both pool and stream afford sport for fishermen, and Miss Hastie and Jón got quite a good basket of trout there. I was less fortunate; but as I did not commence until the others had finished, I concluded that they had caught all the fish in the stream and had left none for me to catch—but I am not a fisherman, so lack of skill may have had something to do with the small success met with.</p>
-				<figure>
-					<img class="js-image" data-pos="0.6" src="img/journey/7.jpg"/>
-					<figcaption>At once the music of the steam-whistle was resumed, and our ears were again tortured by its shrill blasts.</figcaption>
-				</figure>
-				<p>On emerging from the fjord and putting out to sea, we encountered a slight swell from the west, so the vessel rolled a bit; it was really not much, but being the first time during the voyage, it was much disliked by those who were not proof against mal de mer. The clear atmosphere was soon left behind, for we entered another fog bank when only a few miles distant from the land. At once the music of the steam-whistle was resumed, and our ears were again tortured by its shrill blasts.</p>
-				<p>Just below the bridge a very remarkable sight is to be seen. For more than half a mile along the right bank of the river a series of cascades and waterfalls flow into it. The water issues from beneath the lava of which the steep bank is composed, and then flows down its side; it is a very striking proof of the great extent of some of the subterranean rivers. Just above the bridge there is a very fine fall in the Hvitá, known as Barnafoss; though fine, it cannot be compared with Gullfoss in grandeur, and the glory of this part of the river is the series of cascades on its right bank. The spot is supposed to have been named from the drowning of two children near the fall—Barnafoss, the children's waterfall; but the minister at Reykholt declared that the tale is not true, and that the name is more likely to have been corrupted from Bjarni, which is a man's name. It is worthy of note that the birch woods seem to flourish best in the decaying lava in the scoriaceous lava-fields; it also seems to do well in soil produced from liparite, for it grows high up on the east side of the liparite mountain, Tunga.</p>
-			</section>
-			<section class="js-section" data-zoom-start="1.5" data-zoom-middle="1" data-icon="img/plane.svg">
-				<h2><span class="title-up">Gullfoss</span><span class="title-down">Above the Clouds</span></h2>
-				<p>Gullfoss is one of the sights of Iceland. It is a magnificent waterfall on the Hvitá, where the white water of the river cascades over a series of step-like barriers stretching from side to side, and then plunges finally over a ledge of very hard rock into a yawning abyss more than a hundred feet deep, whence it throws up clouds of spray that are carried hither and thither as the wind sweeps first this way and then that; so thick is the spray, that one's clothing soon becomes saturated on incautiously getting into it. </p>
-				<p>Gullfoss is one of the finest waterfalls in Europe, and it is only surpassed in grandeur, if at all, by one or two others in Iceland. We saw the falls at their best, for when we arrived the sun was shining brightly and a rainbow playing over the spray as it rose from the gorge. It is true that the sky clouded over afterwards, and that rain began to fall before we left Gullfoss, but we carried away the impression of the broken waters of the cascade sparkling in the sun, and of the colours of the rainbow playing on the spray over the ravine. The water has carved out a deep gorge in the basalt, and below the falls there are many good specimens of basaltic columns. In the lower part of the gorge there are the picturesque remains of a very fine hard dyke that has a much softer one beside it. These remains are to be seen on both sides of the river, and they have assumed the outline and form of a number of castellated buildings perched high upon prominent peaks.</p>
-				<figure>
-					<img src="img/journey/1.jpg" />
-					<figcaption>Farther on there were many evidences of ice-action: the rounded forms of boulders attracted our attention, as did numerous ice-scratchings on them; some of the outcropping lumps were beautifully rounded.</figcaption>
-				</figure>
-			</section>
-			<section class="js-section" data-zoom-start="1.2">
-				<h2><span class="title-up">Eyjafjallajökull</span><span class="title-down">The Final Destination</span></h2>
-				<p>Miss Hastie might have had an awkward experience at the spring where she elected to perform her ablutions, of whose periodical activity she was at the time unaware. During breakfast, one of the guides informed us that the small geyser Miss Hastie had been using as her hot-water tap had "gone off." Subsequent experience proved such pools untrustworthy for washing of any kind. A number of handkerchiefs left by themselves to soak were found an hour or two later making their way down an escape hole in the basin, and one that had been entirely absorbed by suction was not returned during a subsequent eruption by the dishonest geyser.</p>
-				<p>We erected our tents beside a blue warm-water stream facing the sinter terraces, and as the next day was Sunday, we camped there for two nights. We all took a number of photographs of the terraces and the hot springs, and tried to catch the small geysers when they erupted, as with a few exceptions they did at short intervals; it is true that the eruption was not very violent, and the water was not thrown to a great height, three feet, perhaps, being the maximum.</p>
-				<figure>
-					<img src="img/journey/3.jpg" />
-					<figcaption>I had come to this part of the country intending to make a quick survey of it as we traversed it from end to end.</figcaption>
-				</figure>
-				<p>The next day was devoted to exploring the surrounding neighbourhood, and the different members of the party were struck with different features. Thomas and I set off together. We made for the higher ground, and looked round; we at once saw that we were at the edge of a recent (geologically) lava flow. About four miles distant there stuck up two horns, which we afterwards discovered to be the only prominent remains of the cone of the volcano, Strytur, whence the lava had been ejected. Strytur stands in the middle of the long strip of country lying between, and about equidistant from, the two great ice-fields, Lang Jökull and Hoff Jökull, the area of each of which is roughly about five hundred square miles. </p>
-			</section>
-			<section class="js-section" data-stay="true" data-zoom-start="1.2" >
-				<p>The strip is about fourteen miles wide at its narrowest part (not eight as shown on the existing maps), and extends north and south about twenty-five miles. Strytur is on the divide, or water-parting, between one system of rivers flowing north and another flowing south, and it stands on the highest part of this strip of land. The lava, as it issued from the volcano, flowed north and south down gentle declivities, and spread out east and west almost to the outlying ranges on the margins of the ice-fields. North it extends to just beyond Dufufell, and south almost to Lake Hvitarvatn.</p>
-				<p>
-					<blockquote><em>Take only memories, leave only footprints.</em><span> &mdash; Chief Seattle</span></blockquote>
-				</p>
-			</section>
-			<section class="js-section" data-stay="true" data-zoom-start="0.8"></section>
-		</div>
-		<!-- Related demos -->
-		<section class="content content--related">
-			<p class="info">Filler text from <a href="http://www.gutenberg.org/ebooks/46772">William Bisiker's "Across Iceland"</a></p>
-			<p><strong>If you enjoyed this demo you might also like:</strong></p>
-			<a class="media-item" href="http://tympanus.net/Development/ArticleIntroEffects/">
-				<img class="media-item__img" src="img/related/ArticleIntroEffects.png">
-				<h3 class="media-item__title">Article Intro Effects</h3>
-			</a>
-			<a class="media-item" href="http://tympanus.net/Development/SlidingHeaderLayout/">
-				<img class="media-item__img" src="img/related/SlidingHeaderLayout.jpg">
-				<h3 class="media-item__title">Sliding Header Layout</h3>
-			</a>
-		</section>
-	</div>
-	<!-- /main -->
-	<script src="js/app.js"></script>
-</body>
+    <!--    title-->
+    <div class="video">
+        <iframe id="video" src="https://www.youtube.com/embed/z9U7ag6rIAA?&controls=0&showinfo=0&rel=0&autoplay=1&loop=1&mute=0&playlist=z9U7ag6rIAA" frameborder="0" allowfullscreen></iframe>
+    </div>
 
-</html>
+            <!-- 注意 Youtube embed 連結是置放在 src=" 和 ? 之間。
+       ? 之後的程式碼是控制像是自動播放，迴圈，和靜音設定：autoplay=1, loop=1, mute=1 -->
+
+        <div id="title" class="title">
+            <h1>出緬甸記</h1>
+        </div>
+        <div class="main">
+            <div class="container"></div>
+            <div class="text">
+                <section class="js-section" data-zoom-middle="2">
+                    <br>
+                    <br>
+                    <p>緬甸若開邦（Rakhine）自2017年8月25日爆發由伊斯蘭反政府武裝「洛興亞救世軍」和政府軍的武裝衝突事件以來，至今逾87,000名洛興亞族人被迫倉皇從緬甸逃入孟加拉。孟加拉近年來已接受了超過40萬名的洛興亞難民，其政府曾多次表示該國的難民接待能力已接近極限，因此尚有數千名滯留邊境的洛興亞人，陷入了被孟加拉國政府拒絕或暫緩入境的遭遇。
+                        </p>
+                        <img class="js-image" data-pos="0.25" src="assets/runaway.jpg" />
+                        <figcaption>▲ 數千名洛興亞難民從緬甸和孟加拉向外遷徙，藉由殘破小船從馬六甲海峽和安達曼水域流竄向馬來西亞、印尼、菲律賓、泰國等東南亞國家，國際媒體稱他們為「船民」。攝影／Jonathan Vit</figcaption>
+                </section>
+                
+                  <section class="js-section" data-zoom-start="2">
+                  <h2 class="titlecolor">傾家蕩產也要逃</h2>
+                  <p>當地有許多船家，只要洛興亞人有錢，船家都會載他們渡河，但有剛上岸的難民告訴我們，當地偷渡集團獅子大開口，從緬甸搭船渡河到孟加拉，一人一趟要價5萬孟加拉塔卡（約1.8萬元台幣），而且還得冒著很大的生命危險。</p>
+                  <p>簡陋的木船時常發生翻覆意外，才40天大的嬰兒四肢癱軟第躺在父親的懷抱裡，旁人都泣不成聲。母親抱著他，癱坐在地上。這樣的類似場景，每天都在孟加拉海岸邊上演。</p>
+                      <p>儘管偷渡辛苦、費用高昂，但許多洛興亞人仍帶著僅有家當，不惜離鄉背井尋找另一個棲身之地，只因無法再忍受緬甸軍方的迫害。</p>
+                  
+                          <img class="js-image" data-pos="0.6" src="assets/runaway2.jpg" />
+                     <figcaption>▲ 2017年9月14日，一名從緬甸逃往孟加拉的洛興亞難民手中捧著在船難中喪生的孩子。攝影：Dar Yasin/AP</figcaption>
+                </section>
+                
+                <section class="js-section" data-zoom-start="2.5" data-stay="true">
+                    <h2 class="titlecolor">一卡皮箱的逃亡</h2>
+                    <p>趁著黑夜搭乘人蛇船，渡過邊境納夫河進入孟加拉後，一個洛興亞難民大家族，帶著從緬甸一路扛來的家當，汗流浹背站在薩布朗(Sabrang)一處物資發放處的泥地休息。
+                    <p>家族20歲的小女兒莎瑪打開皮箱，一個紅色小盒子裡面，塞著2張摺疊得小小的「金飾購買證明」，他們帶著紙張，以確保未來變賣身上珠寶時，可以換得應得的金錢；而辣椒則是他們過去在緬甸家園辛苦種植的，再重也要扛過邊境，「除此之外，我們已經一無所有」。</p>
+                    <p>然而，他們剛剛抵達的國度比緬甸更貧窮，難民營的環境髒亂惡臭，且孟加拉政府不願給予他們公民身分。在這裡，洛興亞人發現自己成為一群遭祖國永遠遺棄的「異鄉人」。他們唯一追求的、無比卑微卻困難的生活目標，就是繼續活下去。</p>
+                            <img class="js-image"src="assets/runaway1.jpg" />
+                        <figcaption>▲ 一只皮箱和一袋辣椒，就是這11人洛興亞大家族的所有家當。攝影：陳鼎仁/蘋果日報</figcaption>
+                </section>
+                
+                <section class="js-section" data-zoom-start="1.5">
+                    <h2 class="titlecolor">孤獨的逃亡之路</h2>
+                    <blockquote><em>“不要送我們回緬甸！”</em> &mdash; 來自洛興亞人最後的求助</blockquote>
+                        <p>根據英國《衞報》的前線報導，緬甸軍方自2017年8月25日起，已憑「安全理由」封鎖若開北境，包括眾多國際救援組識也無法入境，因此中斷了他們的運補與援助計劃，受影響者預估超過25萬人。被斷絕了外界的援助，洛興亞族人這次的逃亡是孤獨的，沒有國籍的他們，能依靠的就只有同伴的相助，一起攀山涉水，尋找下一個容身之地。 </p>
+                            <img class="js-image" data-pos="0.6" src="assets/runaway3.jpg" />
+                            <figcaption>▲ 2017年8月31日，在孟加拉海岸，孟加拉村民搜獲兩艘協助洛興亞人逃難時翻沉的船，翻船造成26名婦孺死亡。攝影：Suvra Kahti Das/AP</figcaption>
+                    <br>
+                    <br>
+                    <br>
+                    <p>以上新聞截自：
+                    <p>《端傳媒》，<b><a href="https://theinitium.com/article/20170905-photo-rohingya-refugees/" target="_blank">《圖集：出緬甸記——羅興亞人的逃亡之路》</a></b>（2017年9月5日）</p>
+                    <p>《蘋果日報》，<b><a href="http://www.appledaily.biz/rohingya-sec1" target="_blank">《直擊洛興雅人暗夜逃亡》</a></b>（2017年10月15日）</p>
+                </section>
+            </div>
+        </div>
+
+<br>
+        <br>
+        <br>
+        <br>
+    <!--    緬甸人故事-->
+<div id="story">
+        <div class="storytitle titlecolor">
+           <b><i>&#8220;我不喜歡洛興亞人<br>&emsp;他們以前在若開邦殺了很多人！&#8221;</i></b></div>
+
+    <div class="storycontent">
+                    <p>文／蘋果日報 侯良儒</p>
+            <p>今年23歲、平常在仰光傳統市場賣畫的阿奇（化名），被我們問到這個敏感議題時，先是露出尷尬為難的表情，然後用手指後方的穆斯林小販，表示如果在他攤位旁談這個問題對方可能不高興，希望我們能移動到市場外頭進行採訪。</p>
+         <div>
+
+
+        <p>阿奇說對他而言，洛興亞人是來自孟加拉的移民，不算是緬甸人。問他是否同情遭屠殺的洛興亞平民？阿奇臉色一沉得說：「我不喜歡殺戮，不管是誰都不該讓這種事情一再發生。」</p>
+        <p>28歲緬華的小李（化名）表示，許多洛興亞人是緬甸遭英國殖民時，從孟加拉遷移至緬甸長住，「我個人覺得，他們如果已經移居兩到三代，等於已經在這裡生存一定年度，發放ID是OK的；但這些年才過來的人，我想那是不應該給的。」</p>
+
+    <img src="assets/ho1.jpg" style="display:block; margin:auto;">
+             <br>
+        <h5><span class="w3-tag">宗教並非衝突核心</span></h5>
+
+
+    <p>「這是很清楚的！」現居泰國的若開族青年阿庫（化名）說：如果你世代住在緬甸，政府理應發ID；但如果你是幾年前非法遷移，政府並不需要給你ID，就像我到泰國工作10年，泰國也不會發ID給我，因為我是一個來自緬甸的緬甸人。」</p>
+    <p>阿庫強調，宗教衝突並非這起事件的核心，「若開邦有很多穆斯林，有非法移民、也有合法國民，他們都很努力工作，但有些來自其他國家的極端份子，在若開邦進行殺戮，所以緬甸政府將這些人視為恐怖分子。」</p>
+
+    <img src="assets/ho2.jpg" style="display:block; margin:auto;">
+             <br>
+ </div>
+</div>
+
+    </div>
+
+
+    <div class="line">
+        <div class="timeline history">
+            <div class="timebox left slideanimate">
+                <div class="contenttime">
+                    <h4 class="timetitle">西元8世紀-17世紀中</h4>
+                    <p>孟加拉灣因季風貿易盛行，帶來定居的穆斯林商人團體。1430年，孟加拉蘇丹國征服緬甸西部的若開並開始建政，大量孟加拉人移入。</p>
+                    <p>1660年印度戰亂，開啟第二波洛興亞人大移民至緬甸若開邦地區。1785年，緬甸貢榜王朝兼併若開邦。</p>
+                    <p>1824-26年，第一次英緬戰爭，若開統治權割讓給英屬印度，戰爭時逃難至孟加拉的穆斯林逐漸回流。</p>
+                </div>
+            </div>
+            <div class="timebox right slideanimate">
+                <div class="contenttime">
+                     <h4 class="timetitle">英國殖民時期(1886-1948)</h4>
+                    <p>第三次英緬戰爭，緬甸淪為英國殖民地。英國政府為了發展殖民地事業，鼓勵大量孟加拉移民進入緬甸，是第三波大移民潮。</p>
+                    <p>1948年第二次世界大戰開始，日本入侵緬甸，為了西征印度，在若開區成立以佛教徒為主的若開愛國軍，英印政府則成立以穆斯林為主的第五軍團穆斯林游擊隊，使若開邦於1944年重回英印政府的統治下。隨後爆發的巴基斯坦獨立戰爭，促使洛興亞人的第四波移民潮。</p>
+                </div>
+</div>
+<div class="timebox left slideanimate">
+    <div class="contenttime">
+        <h4 class="timetitle">吳努政府時期(1948-1962年)</h4>
+        <p>二戰後，緬甸聯邦政府拒絕成立自治的穆斯林邦，穆斯林聖戰黨隨即發動針對聯邦政府的聖戰，摧毀了若開邦北部倖存的佛教徒村莊，控制整個若開邦北部和緬甸巴斯基坦邊境，使更多孟加拉人湧入若開邦。</p>
+        <p>1948年，緬甸政府公布《國籍法》與《選擇國籍條例》，在英屬殖民地出生且在緬甸居住8年以上者才可申請歸化入籍，使存有大量文盲人口的洛興亞人成為無國籍者。</p>
+    </div>
+</div>
+            <div class="timebox right slideanimate">
+                <div class="contenttime">
+                     <h4 class="timetitle">軍政府統治時期(1962-2011年)</h4>
+                    <p>1971年的孟加拉國解放戰爭，開啟洛興亞人第五波移民潮。</p>
+                    <p>1982年，緬甸政府再次頒布採血統主義的《國籍法》，雙親中至少一位需為緬甸公民，必須提供1948年前就定居緬甸的證明。國際人權組織統計，約有一百萬洛興亞人在此時被剝奪了國籍。</p>
+                    <p>1962至1988年前，奈溫將軍發動多次剿滅若開邦境內穆斯林武裝份子的清剿行動，並收回大片土地，使許多穆斯林農民失去土地而淪為貧民，「洛興亞難民」一詞越來越頻繁出現於穆斯林媒體上，進而被國際社會使用。</p>
+                    <p>1991年，蘇茂將軍實施若開邦行動，破壞當地穆斯林清真寺並大清剿洛興亞穆斯林團結組織。</p>
+                    <p>1992年，緬甸政府進行停火協議，但對洛興亞人問題仍漠視。</p>
+                </div>
+            </div>
+            <div class="timebox left slideanimate">
+                <div class="contenttime">
+                     <h4 class="timetitle">政治轉型期(2011-至今)</h4>
+                    <p>2014年，緬甸政府實施十萬洛興亞人重建家園與改善醫療及教育計畫，但要洛興亞人提出1948年便居住於此地的證明，不然仍登記為孟加拉裔。</p>
+                    <p>2015年，數千名洛興亞人從緬甸和孟加拉向外遷徙，藉由殘破的小船從馬六甲海峽和安達曼水域流竄向馬來西亞、印尼、菲律賓、泰國等東南亞國家。</p>
+                    <p>2017年8月，洛興亞叛亂份子「阿拉干洛興亞救世軍」襲擊了若開邦多個警察哨與一處陸軍基地，造成近百人死亡。緬甸安全部隊為了應對，開始對洛興亞進行大規模武裝行動，隨著行動繼續，傷亡人數不斷攀升，甚至出現無差別攻擊，做出任意逮補、法外處決、輪姦婦女、縱火焚燒及洗劫民宅等暴行。</p>
+                </div>
+            </div>
+        </div>
+    </div>    
+    
+    <!--        countryscroll-->
+    <div id="countryscroll">
+        <img class="scrollable" data-left=34 data-left2=34 data-top=1 data-top2=50 src="assets/mem-01.svg" style="position:absolute;width:30%;top:25%;left:0%;">
+        
+        <img class="scrollable" data-left=-4.9 data-left2=36 data-top=10 data-top2=59 src="assets/China.svg" style="position:absolute;width:30%;top:25%;left:0%;">
+
+        <img class="scrollable" data-left=-4.9 data-left2=36 data-top=34 data-top2=83 src="assets/india-01.svg" style="position:absolute;width:30%;top:25%;left:0%;">
+        
+        
+        <img class="scrollable" data-left=65 data-left2=65 data-top=1 data-top2=50 src="assets/rohingya-01.svg" style="position:absolute;width:30%;top:25%;left:0%;">
+
+        <img class="scrollable" data-left=-5 data-left2=67 data-top=18 data-top2=67 src="assets/Bangladesh.svg" style="position:absolute;width:30%;top:25%;left:0%;">
+
+        <img class="scrollable" data-left=-5 data-left2=67 data-top=26 data-top2=75 src="assets/Malaysia.svg" style="position:absolute;width:30%;top:25%;left:0%;">
+
+        <img class="scrollable" data-left=-5 data-left2=67 data-top=42 data-top2=91 src="assets/USA.svg" style="position:absolute;width:30vw;top:25%;left:0vw;">
+    </div>
+
+
+<!--支持立場-->
+        <div style="background-color: black">
+<div class="columns countriessit">
+    <div class="countriessit-title titlecolor">中國表態支持緬甸政府</div>
+    <div class="countriessit-word">
+        <p>2017年9月，BBC訪問了中國問題專家庫恩(Robert Lawrence Kuhn)談論緬甸的洛興亞危機。隨後，中國外交部長王毅出席9月在紐約召開的聯合國大會時，也正式表態宣布中國支持緬甸軍方的作法。</p>
+        <p>庫恩認為中國選擇支持緬甸處理洛興亞危機的原因有三：中國同樣也有新疆及西藏等棘手的少數民族問題，所以不會針對這點來要求緬甸政府對此負責。其次，中國在南海的主權爭議上需要東盟成員國緬甸的支持。最重要的，緬甸除了是中國通往印度洋的重要通道，也是其現推行「一帶一路」計畫的重要版圖之一，像是當中的輸油管計畫正好位於緬甸若開邦。</p>
+    </div>
+
+    <div class="countriessit-title titlecolor">美國稱洛興亞受到「種族清洗」</div>
+    <div class="countriessit-word">
+        <p>美國國務卿提勒森11月初隨同川普總統赴亞洲訪問，結束在菲律賓的東盟峰會後，特別轉往緬甸實地了解情況</p>
+        <p>國務院於11月22日首次針對緬甸洛興亞族的情況發表聲明，指出經過對現有事實的謹慎分析後，若開邦北部局勢已構成對洛興亞人的「種族清洗」。美國支持具信譽的獨立調查和聯合國安理會的建設性行動；也會根據美國法律，針對必須負責的對象採取定向性制裁，以追究責任。</p>
+        <p>提勒森表示，扭轉種族清洗的方式是讓這些羅興亞人可以自願返回家園，有尊嚴的過生活。</p>
+    </div>
+</div>
+        <div class="countriessource">
+        <p>以上新聞截自：</p>
+        <p>《中時電子報》，<b><a href="http://www.chinatimes.com/realtimenews/20170921004417-260408" target="_blank">《拉近中緬！陸表態支持翁山蘇姬處理羅興亞危機》</a></b>（2017年9月21日）</p>
+        <p>《中時電子報》，<b><a href="http://www.chinatimes.com/realtimenews/20171123000993-260408" target="_blank">《美國務院稱緬甸少數族裔受到「種族清洗」》</a></b>（2017年11月23日）</p>
+        </div>
+    </div>
+    <!--count-->
+    <div id="count">
+        <div class="countbackground">
+            <div class="columns whitemask">
+                <div class="count">
+                    <h3 id="count1">根據法新社報導，至今已有
+                    </h3>
+                    <h2 class="counter titlecolor">625000</h2>
+
+                    <h3 id="count2">名洛興亞難民湧入鄰國孟加拉，
+                        <p>讓原本就人滿為患的難民營更加混亂。</p>
+                    </h3>
+                    <br>
+                </div>
+
+                <div class="count">
+                    <h3 class="count1">
+                        國際人道救援組織無國界醫生指出，
+                        <p>單是緬甸軍方首月的軍事行動最少造成</p>
+                    </h3>
+                    <h2 class="counter2 titlecolor">6700</h2>
+                    <h3 id="count3">洛興亞人死亡，
+                        <p>主要死因為槍傷、活活燒死及虐打。</p>
+                        <p>當中包括730名只有5歲或以下的幼童。</p>
+                    </h3>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <div id="js">
+        <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+
+<!--    video-->
+        <script>
+            $(function() {
+                var video = $("#video").attr("src");
+                var pos_title = $("#title").position().top;
+                var winh = $(window).height() - 5;
+                console.log(pos_title);
+                $(window).scroll(function() {
+                    var scroll = $(window).scrollTop();
+                    console.log(scroll);
+                    if (scroll > pos_title) {
+                     $("#video").attr("src", "");
+                    }
+
+                    if (scroll == 0) {
+                        $("#video").attr("src", video)
+                
+                    }
+                });
+            });
+        </script>
+
+
+
+
+        <!--countup1-->
+        <script>
+            function isCounterElementVisible($element) {
+                var topView = $(window).scrollTop();
+                var botView = topView + $(window).height();
+                var topElement = $element.offset().top;
+                var botElement = topElement + $element.height();
+                return ((botElement <= botView) && (topElement >= topView));
+            }
+
+            $(window).scroll(function() {
+                $(".counter").each(function() {
+                    isOnView = isCounterElementVisible($(this));
+                    if (isOnView && !$(this).hasClass('visibled')) {
+                        $(this).addClass('visibled');
+                        $(this).prop('Counter', 0).animate({
+                            Counter: $(this).text()
+                        }, {
+                            duration: 3500,
+                            easing: 'swing',
+                            step: function(now) {
+                                $(this).text(Math.ceil(now));
+                            }
+                        });
+                    }
+                });
+            });
+
+        </script>
+        <!--countup2-->
+        <script>
+            function isCounterElementVisible($element) {
+                var topView = $(window).scrollTop();
+                var botView = topView + $(window).height();
+                var topElement = $element.offset().top;
+                var botElement = topElement + $element.height();
+                return ((botElement <= botView) && (topElement >= topView));
+            }
+
+            $(window).scroll(function() {
+                $(".counter2").each(function() {
+                    isOnView = isCounterElementVisible($(this));
+                    if (isOnView && !$(this).hasClass('visibled')) {
+                        $(this).addClass('visibled');
+                        $(this).prop('Counter', 0).animate({
+                            Counter: $(this).text()
+                        }, {
+                            duration: 2500,
+                            easing: 'swing',
+                            step: function(now) {
+                                $(this).text(Math.ceil(now));
+                            }
+                        });
+                    }
+                });
+            });
+
+        </script>
+
+        <!--    浮出動畫-->
+        <script>
+            $(function() {
+                $(window).scroll(function() {
+                    $(".slideanimate").each(function() {
+                        var pos = $(this).offset().top;
+                        var winTop = $(window).scrollTop();
+                        var winh = $(window).height();
+                        if (pos - winh / 2 < winTop) {
+                            $(this).addClass("slide");
+                        }
+                    });
+                });
+            });
+
+        </script>
+        <script src="js/app.js"></script>
+
+
+        <!--    country-->
+        <div id="country">
+            <script>
+                $(document).ready(function() {
+                    var winh = $(window).height();
+                    $(window).scroll(function() {
+                        var scrolled = $(window).scrollTop();
+                        $(".scrollable").each(function() {
+                            var parent_pos = $(this).parent().offset().top;
+                            var next_pos = $(this).parent().next().offset().top;
+                            var parent_height = $(this).parent().height();
+                            var parent_scrolled = scrolled - $(this).parent().offset().top;
+                            if (parent_scrolled > 0 && scrolled < next_pos - winh) {
+
+                                if ($(this).attr("data-left")) {
+                                    $(this).css('left', (($(this).data('left2') - $(this).data('left')) * parent_scrolled / winh + $(this).data('left')) + 'vw');
+                                }
+                                if ($(this).attr("data-top")) {
+                                    $(this).css('top', (($(this).data('top2') - $(this).data('top')) * parent_scrolled / winh + $(this).data('top')) + '%');
+                                }
+                                if ($(this).attr("data-width")) {
+                                    $(this).css('width', (($(this).data('width2') - $(this).data('width')) * parent_scrolled / winh + $(this).data('width')) + 'vw');
+                                }
+                            }
+                        });
+
+                    });
+                });
+
+            </script>
+        </div>
+    </div>
+</body>
