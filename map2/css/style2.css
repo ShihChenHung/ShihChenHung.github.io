@@ -1,37 +1,11 @@
-body {
-    margin: 0;
-    background-color: black;
-    font-family: 'Noto Sans TC', sans-serif;
-    max-width: 100vw;
-}
-
-.title {
-    z-index: 1;
-    max-width: 100vw;
-    background: rgba(0, 0, 0, 0.3);
-    color: #fff;
-    padding: 1rem;
-}
-
-.titlecolor {
-    color: #33CCAE;
-}
-
-
-h1 {
-    font-size: 5rem;
-    z-index: 99;
-
-}
-
 /*video*/
 
 .video iframe {
     background: #000;
-    position: auto 0px 0px 0px;
+    position: auto, 0px, 0px, 0px;
     z-index: -9;
     pointer-events: none;
-    width: 100%;
+    width: 100vw;
     height: 100vh;
 }
 
@@ -48,127 +22,113 @@ h1 {
 
 /* Content */
 
-.main h2 {
-    font-size: 3rem;
-    text-shadow: 4px 4px 3px rgba(0, 0, 0, 0.1);
-    padding-left: 4rem;
-    padding-top: 1rem;
-    padding-bottom: 0.5rem;
-    margin-bottom: 0rem;
+.content {
+    padding: 3em 0;
 }
 
+
 .js-section {
-    width: 90vw;
+    width: 100vw;
     max-width: 700px;
-    padding-left: 2rem;
+}
+
+.js-gallery {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.js-gallery-content {
+    font-size: 0;
+    text-align: center;
+}
+
+.js-gallery-content img {
+    max-width: 100%;
+    margin: 10px 0;
 }
 
 .js-image {
-    max-width: 100%;
-    width: 700px;
+    max-width: 50vw;
 }
 
-figcaption {
-    color: darkgray;
-    font-size: 0.8rem;
+body {
+    margin: 0;
+    background-color: black;
+    font-family: 'Noto Sans TC', sans-serif;
     max-width: 100vw;
-    padding-left: 1rem;
 }
 
+.title {
+    z-index: 1;
+    width: 100vw;
+    background: rgba(0, 0, 0, 0.3);
+    color: #fff;
+    padding: 1rem;
+    font-family: Avenir, Helvetica, sans-serif;
 
+}
 
-/*緬人故事*/
+h1 {
+    font-size: 5rem;
+    z-index: 99;
 
-.w3-tag {
-    background-color: #232323;
-    color: white;
+}
+
+h2 {
+
+    font-size: 5rem;
+}
+
+h3 {
     font-size: 1.5rem;
-    padding-left: 2.5rem;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-    padding-right: 2rem;
-}
-
-.storytitle {
-    font-size: 2.5rem;
-    background-color: #232323;
-    height: auto;
-    max-width: 100vw;
-    padding-left: 5rem;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    line-height: 5rem;
-
-}
-
-.storycontent {
-    line-height: 1.5rem;
-    font-size: 1.1rem;
-    width: 750px;
-    max-width: 95vw
-}
-
-.storycontent p {
     line-height: 2rem;
-    padding-left: 2rem;
-    padding-top: 1.5rem;
+    margin-top: 10vh;
 }
 
-.storycontent img {
-    max-width: 100%;
+h4 {
+    font-size: 1.5rem;
 }
 
 /*timeline*/
 
-.timetitle {
-    color: #2EAF96;
-    margin: 0;
-    padding: 0.8rem 0 0.3rem 0;
-}
-
 .line {
+    background-color: black;
     font-size: 1rem;
+
 }
 
 .history {
     background-image: url("../assets/timelineback.jpg");
     background-attachment: fixed;
-    z-index: 0;
     background-repeat: no-repeat;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
     background-size: cover;
-    background-position: center;
+    z-index: 0;
 
 }
 
 .timeline {
     position: relative;
-    max-width: 100vw;
+    max-width: 95vw;
     margin: 0 auto;
-
 }
 
 .timeline::after {
     content: '';
     position: absolute;
     width: 6px;
-    background-color: #33CCAE;
+    background-color: white;
     top: 0;
     bottom: 0;
     left: 50%;
     margin-left: -3px;
-    z-index: -80;
-    box-shadow: 4px 4px 3px rgba(0, 0, 0, 0.5);
+        box-shadow: 2px 2px 4px #000000;
 }
 
 .timebox {
     padding: 10px 40px;
     position: relative;
     background-color: inherit;
-    width: 43.5vw;
-    max-width: 80vw;
+    max-width: 41.7vw;
 }
 
 .timebox::after {
@@ -177,14 +137,13 @@ figcaption {
     width: 25px;
     height: 25px;
     right: -17px;
-    background-color: white;
-    border: 4px solid white;
+    background-color: #2BAF96;
+    border: 4px solid #2BAF96;
     top: 15px;
     border-radius: 50%;
     z-index: 1;
-
+    box-shadow: 2px 2px 4px #000000;
 }
-
 
 
 .left {
@@ -206,7 +165,7 @@ figcaption {
     right: 30px;
     border: medium solid black;
     border-width: 10px 0 10px 10px;
-    border-color: transparent transparent transparent #FDFCEC;
+    border-color: transparent transparent transparent white;
 }
 
 .right::before {
@@ -219,7 +178,7 @@ figcaption {
     left: 30px;
     border: medium solid black;
     border-width: 10px 10px 10px 0;
-    border-color: transparent #FDFCEC transparent transparent;
+    border-color: transparent white transparent transparent;
 }
 
 .right::after {
@@ -230,16 +189,16 @@ figcaption {
 
 .contenttime {
     padding: 20px 30px;
-    background-color: #FDFCEC;
+    background-color: white;
     position: relative;
     border-radius: 6px;
-    box-shadow: 4px 4px 3px rgba(0, 0, 0, 0.5);
+    box-shadow: 2px 2px 4px #000000;
 }
 
-.line h4 {
-    font-size: 1.5rem;
+.timetitle{
+        color: #2BAF96;
+    text-shadow: 2px 3px 5px #CECCCC;
 }
-
 
 /*countryscroll*/
 
@@ -247,86 +206,26 @@ figcaption {
     background-image: url("../assets/war2.jpg");
     background-attachment: fixed;
     background-position: center;
-    height: 200vh;
-    position: relative;
-
     background-repeat: no-repeat;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
     background-size: cover;
-    background-position: center;
 }
 
 .scrollable {
     max-height: 15vh;
 }
 
-/*各國立場*/
-
-.countriessit {
-    background-image: url(../assets/conflict2.jpg);
-    z-index: 12;
-    padding: 2rem;
-    padding-top: 2rem;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    background-position: center;
-}
-
-.countriessit-title {
-
-    font-size: 2.5rem;
-    line-height: 5rem;
-    text-align: center;
-
-    font-weight: 600;
-}
-
-.countriessit-word {
-    color: white;
-    font-size: 1rem;
-    text-align: left;
-    line-height: 2rem;
-    padding: 2rem;
-    padding-top: 2rem;
-    padding-bottom: 0.5rem;
-}
-
-.countriessource {
-    color: darkgray;
-    font-size: 0.9rem;
-    text-align: center;
-    padding: 2rem;
-    padding-top: 0.5rem;
-}
-
-a {
-    color: darkgrey;
-}
-
-a1 {
-    color: black;
-}
-
 /*count*/
+
 
 .countbackground {
     background-attachment: fixed;
+    background-size: cover;
     min-height: 70vh;
     text-align: center;
     line-height: 2rem;
+    width: 100vw;
+    background-position:0% 40%;
     background-image: url(../assets/counterbackground.jpg);
-    background-repeat: no-repeat;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    background-position: center;
 }
 
 .columns {
@@ -338,15 +237,19 @@ a1 {
 }
 
 .whitemask {
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.2);
     background-attachment: fixed;
     z-index: 10;
-    padding: 7rem 5rem 2rem 0;
+    padding: 5rem;
+    padding-top: 7rem;
 }
 
+.count{
+            padding-top: 5vh;
+}
 
 #count1 {
-    margin-top: 2rem;
+    margin-top: 6rem;
     padding-bottom: 2rem;
 }
 
@@ -358,34 +261,20 @@ a1 {
     padding-top: 2.0rem;
 }
 
-#countt {
-    padding: 2rem
-}
-
 #count1,
 .count1,
 #count2,
-#count3 {
+#count3{
     color: white;
 }
 
 .counter,
-.counter2 {
-    padding: 2rem
+.counter2{
+    color: #2BAF96;
+     padding: 2rem
 }
 
-
-.count h2 {
-
-    font-size: 5rem;
-}
-
-.count h3 {
-    font-size: 1.5rem;
-    line-height: 2rem;
-    margin-top: 10vh;
-}
-
+.
 /*animate*/
 
 .slideanimate {
@@ -444,7 +333,7 @@ a1 {
         left: 60px;
         border: medium solid white;
         border-width: 10px 10px 10px 0;
-        border-color: transparent #FDFCEC transparent transparent;
+        border-color: transparent white transparent transparent;
     }
 
 
@@ -497,10 +386,6 @@ a1 {
 @media all and (max-width: 700px) {
     html {
         font-size: 10px;
-
-    }
-    blockquote {
-        font-size: 1.45rem;
     }
 
 
